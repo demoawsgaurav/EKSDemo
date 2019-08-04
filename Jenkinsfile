@@ -6,7 +6,7 @@ pipeline {
   kubernetes {
             //cloud 'aws'
             label 'jenkins-maven'
-            default 'jnlp'
+            //default 'jnlp'
         }
   }
   environment {
