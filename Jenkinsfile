@@ -1,14 +1,14 @@
 pipeline {
-  //agent {
-    //label "jenkins-maven"
-  //}
   agent {
-  kubernetes {
-            //cloud 'aws'
-            label 'jenkins-maven'
-            defaultContainer 'jnlp'
-        }
+    label "jenkins-maven"
   }
+  //agent {
+  //kubernetes {
+            //cloud 'aws'
+    //        label 'jenkins-maven'
+      //      defaultContainer 'jnlp'
+       // }
+  //}
   environment {
     ORG = 'demoawsgaurav'
     APP_NAME = 'eksdemo'
