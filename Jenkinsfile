@@ -1,6 +1,13 @@
 pipeline {
+  //agent {
+    //label "jenkins-maven"
+  //}
   agent {
-    label "jenkins-maven"
+  kubernetes {
+            //cloud 'aws'
+            label 'jenkins-maven'
+            default 'jnlp'
+        }
   }
   environment {
     ORG = 'demoawsgaurav'
